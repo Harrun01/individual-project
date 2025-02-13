@@ -1,0 +1,105 @@
+/* WONDERFUL MOBILE FIRST CSS HERE */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desktop-header {
+    flex-direction: row;
+}
+
+.nav-menu {
+    background-color: #2c3e50;
+    /* display:none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.nav-menu div{
+    display: flex;
+    flex-direction: column;
+}
+.nav-menu.active{
+    /* display:block; */
+    max-height: 300px;
+}
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+.burger-menu {
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    justify-content: space-between;
+}
+.burger-line {
+    height: 3px;
+    margin-bottom:4px;
+    background-color: white;
+    transition: 0.3s;
+}
+.mobile-header .burger-menu {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.nav-item:hover {
+    background-color: #34495e;
+}
+.hero-section {
+    background-color: #3498db;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.content-sections {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.desktop-content {
+    flex-direction: row;
+    gap: 20px;
+}
+.mobile-content {
+    flex-direction: column;
+}
+.section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 10px;
+}
+.footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.desktop-nav {
+    display: none;
+}

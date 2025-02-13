@@ -1,11 +1,70 @@
+<!--   AMAZING WELL FORMED HTML HERE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cantor College Home</title>
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 768px)">
 </head>
 <body>
-    
+    <div class="container">
+            <div class="header">
+                <div>
+                <h1>Task Management System</h1>
+            </div>
+            
+                             <!-- Burger Menu -->
+                             <div class="burger-menu" onclick="toggleMenu()">
+                                <div class="burger-line"></div>
+                                <div class="burger-line"></div>
+                                <div class="burger-line"></div>
+                            </div>
+            
+                        </div>
+                <nav class="nav-menu">
+                    <div>
+                    <a href="Index.html" class="nav-item">Home</a>
+                    <a href="courses.html" class="nav-item">Courses</a>
+                    <a href="#" class="nav-item">Admissions</a>
+                    <a href="#" class="nav-item">Research</a>
+                    <a href="#" class="nav-item">Contact</a>
+                    <a href="#"class="nav-item">About us</a>
+                </div>
+                </nav>
+
+            <div class="hero-section">
+                <h2>Empowering Education, Inspiring Futures</h2>
+                <p>Discover world-class learning at Cantor College</p>
+            </div>
+
+            <div class="content-sections">
+                <div class="section">
+                    <h3>Upcoming Events</h3>
+                    <p>Calendar of academic and campus events</p>
+                </div>
+                <div class="section">
+                    <h3>Latest Research</h3>
+                    <p>Groundbreaking research initiatives</p>
+                </div>
+                <div class="section">
+                    <h3>Admission Info</h3>
+                    <p>Application process and deadlines</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2024 Task Management System | All Rights Reserved</p>
+            </div>
+        </div>
+
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.nav-menu');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

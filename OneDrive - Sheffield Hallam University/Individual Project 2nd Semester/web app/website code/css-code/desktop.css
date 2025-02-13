@@ -1,0 +1,13 @@
+.burger-menu {
+    display: none;
+}
+
+.nav-menu {
+    display: block; /* Ensure the nav menu is displayed */
+    max-height: 300px;
+}
+
+.nav-menu div {
+    display: flex;
+    flex-direction: row;
+}
